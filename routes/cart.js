@@ -18,7 +18,7 @@ cartRouter.post("/addtocart/:id", userAuth, async (req, res) => {
     });
 
     await cartItem.save();
-
+//test
     console.log(cartItem);
 
     res.status(201).json({ message: "Added to cart successfully", cartItem });
