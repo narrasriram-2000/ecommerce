@@ -5,11 +5,11 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  productID: {
-    type: mongoose.Schema.Types.ObjectId,
+  quantity: {
+    type: String,
     required: true,
-    unique: true,
-  },
+  }
+
 });
 
 module.exports = mongoose.model('Product', productSchema);
